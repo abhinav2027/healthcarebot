@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chatbot Helpdesk</title>
+    <style>
+body {
+  background-color: black;
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+}
+</style>
+</head>
+<body>
+    <h1 style="color:MediumSeaGreen">Chatbot Helpdesk</h1>
+    <form action="/submit" method="post">
+        <label for="health_condition" style ="color:Tomato">Health Condition:</label>
+        <select name="health_condition" id="health_condition">
+            <option value="Fever">Fever</option>
+            <option value="Cold">Cold</option>
+            <option value="Vomiting">Vomiting</option>
+        </select>
+        <br>
+	<br>
+        <label for="severity" style = "color:Tomato">Severity Level:</label>
+        <select name="severity" id="severity">
+            <option value="low">Low</option>
+            <option value="medium">Medium</option>
+            <option value="high">High</option>
+        </select>
+        <br>
+	<br>
+	<input type = "checkbox" id = "voice" name = "voice" value = "voice">
+	<label for = "voice" style = "color:Tomato">Enable voice</label><br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
